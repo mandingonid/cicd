@@ -16,7 +16,7 @@ pipeline {
              
         stage("deploy"){
             steps{
-                echo "Deploying docker, jenkins, pipeline"
+                echo "Deploying docker container, jenkins pipeline"
             }
         }
     }  
