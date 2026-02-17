@@ -1,0 +1,23 @@
+pipeline {
+        
+        stage("build"){
+            steps{
+                echo "Building docker, jenkins, pipeline"
+            }
+        }
+        
+        stage("test"){
+            
+            steps{
+                echo "Testing docker, jenkins, pipeline" 
+                echo 'Branch is: ${BRANCH_NAME}'  
+           }
+        }
+             
+        stage("deploy"){
+            steps{
+                echo "Deploying docker container, jenkins pipeline"
+            }
+        }
+    }  
+}
