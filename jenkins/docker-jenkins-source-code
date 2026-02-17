@@ -1,0 +1,7 @@
+node{
+  stage('Checkout'){
+    step{
+      checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/mandingonid/cicd.git']])
+    }
+  }
+}
